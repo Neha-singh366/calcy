@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro project4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="container">
+    
+    <div class="calculator">
+        <div class="ki"><h3 >Calc</h3></div>
+        <form>
+            <div class="manku">
+                 <input type="text" placeholder="0" class="fi" id="display" readonly>
+            </div>
+            <div class="priya">
+                <div>
+                 
+                <input type="button"  id="display" class="jj" value="7" onclick="appendToDisplay('7')">
+                <input type="button"  id="display" class="jj" value="8" onclick="appendToDisplay('8')">
+                <input type="button"  id="display" class="jj" value="9" onclick="appendToDisplay('9')">
+                <input type="button"  id="display" class="kk" value="DEL" onclick="deleteLastCharacter()"> 
+            </div>
+            <div >
+                
+                <input type="button"  id="display" class="jj" value="4" onclick="appendToDisplay('4')">
+                <input type="button"  id="display" class="jj" value="5" onclick="appendToDisplay('5')">
+                <input type="button"  id="display" class="jj" value="6" onclick="appendToDisplay('6')">
+                <input type="button"  id="display" class="jj" value="+" onclick="appendToDisplay('+')">   
+            </div>
+            <div >  
+                <input type="button"  id="display" class="jj" value="1" onclick="appendToDisplay('1')">
+                <input type="button"  id="display" class="jj" value="2" onclick="appendToDisplay('2')">
+                <input type="button"  id="display" class="jj" value="3" onclick="appendToDisplay('3')">
+                <input type="button"  id="display" class="jj" value="-" onclick="appendToDisplay('-')">
+            </div>
+            <div >
+                <input type="button"  id="display" class="jj" value="." onclick="appendToDisplay('.')">
+                <input type="button"  id="display" class="jj" value="0" onclick="appendToDisplay('0')">
+                <input type="button"  id="display" class="jj" value="/"onclick="appendToDisplay('/')">
+                <input type="button"  id="display" class="jj" value="*" onclick="appendToDisplay('*')">
+  
+            </div>
+            <div class="okay">
+                <input type="button" id="display" class="dot" value="RESET" onclick="clearDisplay()">
+                <input type="button" id="display" class="zero" value="=" onclick="calculateResult()">
+            </div>
+        </div>
+        </form>
+
+    </div>
+
+   </div>
+   <script src="script.js">
+     
+   </script>
+</body>
+</html>
